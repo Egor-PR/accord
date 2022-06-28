@@ -1,0 +1,23 @@
+.accordeon {
+  width: 100%;
+  border: 1px solid black;
+
+}
+
+.title {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.content {
+  height: 0;
+  overflow: hidden;
+  /* чтобы конент был не видим при переходе*/
+  transition: 0.3s;
+}
+
+.active .content {
+  height: 50px;
+  overflow: scroll;
+
+}
